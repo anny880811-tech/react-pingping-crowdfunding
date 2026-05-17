@@ -1,0 +1,47 @@
+  .icon-heart {
+    margin: auto;
+    display: flex;
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      height: 2px;
+      background-color: $warning;
+    }
+
+    &::before {
+      margin-right: 15px;
+    }
+
+    &::after {
+      margin-left: 15px;
+    }
+
+    .section-title-text {
+      font-size: 20px;
+      min-width: 87px;
+      height: 29px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include media-breakpoint-up(lg) {
+        min-width: 104px;
+        height: 36px;
+      }
+
+    }
+  }
+
+  .form-custom {
+    background-color: #F7F7F7;
+    border: none;
+  }

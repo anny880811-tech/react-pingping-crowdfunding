@@ -1,0 +1,23 @@
+$primary:   #0d6efd;
+$secondary: #858377;
+$success:   #198754;
+$info:      #0dcaf0;
+$warning:   #FFDF65;
+$danger:    #FF785E;
+$light:     #f8f9fa;
+$dark:      #636057;
+
+
+$theme-colors: (
+  "primary":   $primary,
+  "secondary": $secondary,
+  "success":   $success,
+  "info":      $info,
+  "warning":   $warning,
+  "danger":    $danger,
+  "light":     $light,
+  "dark":      $dark 
+);
+
+$font-family-sans-serif: 'Noto Sans TC', sans-serif;
+$headings-font-family: 'Baloo Tamma 2', sans-serif;
