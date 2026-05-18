@@ -1,7 +1,8 @@
 import { createHashRouter } from "react-router";
 import Layout from "./layout/Layout";
 import Home from "./views/Home";
-import Qa from "./views/Qa";
+import Introduce from "./components/Introduce";
+import Qa from "./components/Qa";
 
 export const router = createHashRouter([
   {
@@ -11,10 +12,16 @@ export const router = createHashRouter([
       {
         index: true,
         element: <Home />,
-      },
-      {
-        path: 'qa',
-        element: <Qa />,
+        // children: [
+        //   {
+        //     index: true,
+        //     element: <Introduce />,
+        //   },
+        //   {
+        //     path: '/:qa',
+        //     element: <Qa />,
+        //   },
+        // ],
       },
     ],
   },

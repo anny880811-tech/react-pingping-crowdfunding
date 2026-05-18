@@ -1,0 +1,59 @@
+.accordion {
+  border: none;
+
+  .accordion-item {
+    border: 1px solid #E5E5E5; 
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow: none;
+
+    .accordion-button {
+      border: none; 
+      box-shadow: none;
+      
+      color: $dark;
+      background-color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding: 1.25rem 1.5rem;
+
+      &:focus {
+        box-shadow: none;
+        background-color: white;
+      }
+
+      &:not(.collapsed) {
+        background-color: white ;
+        color: $dark;
+        box-shadow: none ;
+      }
+
+      &:hover {
+        background-color: white;
+      }
+
+      .qa-tag {
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+        background-color: $warning;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .qa-title {
+        margin: auto;
+      }
+    }
+
+    .accordion-body {
+      color: $secondary;
+      padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+  }
+}
