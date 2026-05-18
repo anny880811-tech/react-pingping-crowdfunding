@@ -1,0 +1,31 @@
+.progres-card{
+  display: flex;
+  height: 132px;
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  @include media-breakpoint-up(lg) {
+      height: 168px;
+    }
+    .progres-img{
+      height: 100%;
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .progres-content{
+      margin: auto;
+      align-items: center;
+      color: $secondary;
+      font-size: 14px;
+      h6{
+        color: $dark;
+      }
+      .more{
+        color: $danger;
+        font-weight: bold;
+      }
+    }
+}

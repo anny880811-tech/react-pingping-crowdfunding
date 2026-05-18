@@ -1,3 +1,4 @@
+import CurrentProgres from "../components/CurrentProgres"
 import Introduce from "../components/Introduce"
 import Qa from "../components/Qa"
 import SponsorPlanCard from "../components/SponsorPlanCard"
@@ -86,7 +87,8 @@ const Home = () => {
           <div className="row">
             <div className="col-12 col-lg-8">
               {/* <Introduce /> */}
-              <Qa />
+              {/* <Qa /> */}
+              <CurrentProgres />
               <div className="mt-6 mb-6 d-none d-lg-block">
                 <SponsorPlanForm />
               </div>
