@@ -1,5 +1,3 @@
-
-
 .product-custom {
   border-radius: 2rem;
   display: block;
@@ -61,29 +59,50 @@
 
 //---------------------------------------
 
-.project-nav {
-  height: 52px;
-  border-bottom: 1px solid #4d4949b2;
-  border-top: 1px solid #4d4949b2;
-  background-color: white;
 
-  @include media-breakpoint-up(lg) {
-    height: 70px;
-  }
+.project-nav {
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5; 
+  padding: 0;
 
   .navbar-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
     width: 100%;
 
     @include media-breakpoint-up(lg) {
       justify-content: flex-start;
+      gap: 32px; 
     }
 
     .nav-link {
+      color: $secondary;
+      font-size: 16px;
+      text-decoration: none;
+      position: relative;
+      padding: 1.5rem 0;
+
       @include media-breakpoint-up(lg) {
-        margin-right: 32px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      &.active {
+        color: $dark;
+        font-weight: bold;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -1px; 
+          left: 0;
+          width: 100%; 
+          height: 4px;
+          background-color: $warning;
+        }
       }
     }
   }
@@ -190,4 +209,3 @@
     }
   }
 }
-

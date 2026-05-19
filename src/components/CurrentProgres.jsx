@@ -24,8 +24,8 @@ function CurrentProgres() {
       {progresData.map((item, index) => {
         return (
           <div className="progres-card mb-3" key={index}>
-            <div><img src={item.img} className="progres-img" alt="進度照片" /></div>
-            <div className="progres-content ms-3">
+            <div className="progres-img-wrap"><img src={item.img} className="progres-img" alt="進度照片" /></div>
+            <div className="progres-content">
               <h6 className="mb-0">{item.title}</h6>
               <div>{item.date}</div>
               <div className="d-none d-lg-block mt-2">{item.content}</div>

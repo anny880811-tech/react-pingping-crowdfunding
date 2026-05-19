@@ -1,7 +1,4 @@
-import CurrentProgres from "../components/CurrentProgres"
-import Introduce from "../components/Introduce"
-import Message from "../components/Message"
-import Qa from "../components/Qa"
+import { NavLink, Outlet } from "react-router"
 import SponsorPlanCard from "../components/SponsorPlanCard"
 import SponsorPlanForm from "../components/SponsorPlanForm"
 
@@ -66,20 +63,12 @@ const Home = () => {
       <section>
         <nav className="navbar navbar-expand-lg project-nav">
           <div className="container">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">專案介紹</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">常見問答</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">目前進度</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">留言</a>
-              </li>
-            </ul>
+            <div className="navbar-nav">
+              <NavLink className="nav-link" to="/">專案介紹</NavLink>
+              <NavLink className="nav-link" to="/qa">常見問答</NavLink>
+              <NavLink className="nav-link" to="/progres">目前進度</NavLink>
+              <NavLink className="nav-link" to="/message">留言</NavLink>
+            </div>
           </div>
         </nav>
       </section>
@@ -87,10 +76,7 @@ const Home = () => {
         <div className="container mt-5 product-area2">
           <div className="row">
             <div className="col-12 col-lg-8">
-              {/* <Introduce /> */}
-              {/* <Qa /> */}
-              {/* <CurrentProgres /> */}
-              <Message />
+              <Outlet/>
               <div className="mt-6 mb-6 d-none d-lg-block">
                 <SponsorPlanForm />
               </div>
