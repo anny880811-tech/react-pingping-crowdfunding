@@ -1,0 +1,31 @@
+.message {
+  width: 100%;
+  color: $dark;
+
+  .comment-notice {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    border-left: 3px solid $warning;
+    font-size: 14px;
+
+  }
+
+  .message-card {
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 1rem 1rem 1rem 1rem;
+
+    .message-header {
+      display: flex;
+
+    }
+
+    .message-card-reply {
+      background-color: $light;
+      padding: 1rem 1rem 1rem 1rem;
+    }
+
+  }
+
+}

@@ -34,7 +34,6 @@ function CurrentProgres() {
           </div>
         )
       })}
-
     </div>
   </>
 }
