@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router"
 import SponsorPlanCard from "../components/SponsorPlanCard"
 import SponsorPlanForm from "../components/SponsorPlanForm"
 
+
 const Home = () => {
   return <>
     <div>
@@ -19,7 +20,9 @@ const Home = () => {
               <div className="introduce-custom">
                 <p className="fs-6">目標 $600,000</p>
                 <h2>$280,047</h2>
-                <div className="progress-bar-custom mb-3"></div>
+                <div className="progress mb-3">
+                  <div className="progress-bar" role="progressbar" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
+                </div>
                 <div className="row">
                   <div className="col-6">
                     <p className="fs-6">贊助人數</p>
@@ -31,14 +34,33 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="icon-custom">
-                  <img src="./src/assets/icon_good01.svg" alt="" />
-                  <span className="fs-7 me-3 d-inline d-lg-none">認證標章</span>
-                  <img src="./src/assets/icon_good02.svg" alt="" />
-                  <span className="fs-7 me-3 d-inline d-lg-none">品質保證</span>
-                  <img src="./src/assets/icon_good03.svg" alt="" />
-                  <span className="fs-7 me-3 d-inline d-lg-none">原生創意</span>
-                  <img src="./src/assets/icon_good04.svg" alt="" />
-                  <span className="fs-7 me-3 d-inline d-lg-none">人氣王</span>
+                  {/* 1. 認證標章 */}
+                  <div className="tab-group">
+                    <div className="icon-tab">認證標章</div>
+                    <img src="./src/assets/icon_good01.svg" alt="認證標章" />
+                    <span className="fs-7 me-3 d-inline d-lg-none">認證標章</span>
+                  </div>
+
+                  {/* 2. 品質保證 */}
+                  <div className="tab-group">
+                    <div className="icon-tab">品質保證</div>
+                    <img src="./src/assets/icon_good02.svg" alt="品質保證" />
+                    <span className="fs-7 me-3 d-inline d-lg-none">品質保證</span>
+                  </div>
+
+                  {/* 3. 原生創意 */}
+                  <div className="tab-group">
+                    <div className="icon-tab">原生創意</div>
+                    <img src="./src/assets/icon_good03.svg" alt="原生創意" />
+                    <span className="fs-7 me-3 d-inline d-lg-none">原生創意</span>
+                  </div>
+
+                  {/* 4. 人氣王 */}
+                  <div className="tab-group">
+                    <div className="icon-tab">人氣王</div>
+                    <img src="./src/assets/icon_good04.svg" alt="人氣王" />
+                    <span className="fs-7 me-3 d-inline d-lg-none">人氣王</span>
+                  </div>
                 </div>
                 <div className="content-custom mt-3">
                   <div className="p-3">
@@ -76,8 +98,8 @@ const Home = () => {
         <div className="container mt-5 product-area2">
           <div className="row">
             <div className="col-12 col-lg-8">
-              <Outlet/>
-              <div className="mt-6 mb-6 d-none d-lg-block">
+              <Outlet />
+              <div className="mt-6 d-none d-lg-block">
                 <SponsorPlanForm />
               </div>
             </div>

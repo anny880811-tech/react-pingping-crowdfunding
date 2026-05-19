@@ -7,6 +7,16 @@
   border-bottom: 5px solid $warning ;
   background-color: white;
 
+  @include media-breakpoint-down(lg) {
+    height: auto;
+    min-height: 64px;
+
+    .navbar-collapse {
+      background-color: white;
+      padding: 1rem 0;
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     height: 72px;
   }
@@ -37,5 +47,36 @@
     @include media-breakpoint-up(lg) {
       font-size: 16px;
     }
+  }
+}
+
+.modal-content {
+  border-top: 3px solid $warning;
+  max-width: 500px;
+
+  .modal-footer {
+    border: none;
+  }
+
+  .modal-register {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+.mobile {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+  .mobile-custom {
+    
+    height: 44px;
+    background-color: $warning;
+    color: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
