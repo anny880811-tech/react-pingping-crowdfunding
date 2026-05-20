@@ -1,6 +1,12 @@
 import { NavLink, Outlet } from "react-router"
 import SponsorPlanCard from "../components/SponsorPlanCard"
 import SponsorPlanForm from "../components/SponsorPlanForm"
+import produt_image from '../assets/produt_image.jpg'
+import icon_good01 from '../assets/icon_good01.svg'
+import icon_good02 from '../assets/icon_good02.svg'
+import icon_good03 from '../assets/icon_good03.svg'
+import icon_good04 from '../assets/icon_good04.svg'
+import store_img from '../assets/store_img.jpg'
 
 
 const Home = () => {
@@ -9,12 +15,12 @@ const Home = () => {
       <section className="pt-5 pb-6 product-area">
         <div className="container">
           <div className="">
-            <button className="tag-custom tag-1 mb-2">魔法科技</button>
+            <button className="tag-custom tag-1 mb-3">魔法科技</button>
             <h2>拍出會動的照片｜LivePhotos 魔法拍立得</h2>
           </div>
           <div className="row pt-4">
             <div className="col-12 col-lg-7">
-              <img src="./src/assets/produt_image.jpg" className="product-custom" alt="" srcSet="" />
+              <img src={produt_image} className="product-custom" alt="相機照片" srcSet="" />
             </div>
             <div className="col-12 col-lg-5 mt-lg-0 mt-3">
               <div className="introduce-custom">
@@ -34,32 +40,25 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="icon-custom">
-                  {/* 1. 認證標章 */}
                   <div className="tab-group">
                     <div className="icon-tab">認證標章</div>
-                    <img src="./src/assets/icon_good01.svg" alt="認證標章" />
-                    <span className="fs-7 me-3 d-inline d-lg-none">認證標章</span>
+                    <img src={icon_good01} alt="認證標章" />
+                    <span className="d-inline d-lg-none">認證標章</span>
                   </div>
-
-                  {/* 2. 品質保證 */}
                   <div className="tab-group">
                     <div className="icon-tab">品質保證</div>
-                    <img src="./src/assets/icon_good02.svg" alt="品質保證" />
-                    <span className="fs-7 me-3 d-inline d-lg-none">品質保證</span>
+                    <img src={icon_good02} alt="品質保證" />
+                    <span className="d-inline d-lg-none">品質保證</span>
                   </div>
-
-                  {/* 3. 原生創意 */}
                   <div className="tab-group">
                     <div className="icon-tab">原生創意</div>
-                    <img src="./src/assets/icon_good03.svg" alt="原生創意" />
-                    <span className="fs-7 me-3 d-inline d-lg-none">原生創意</span>
+                    <img src={icon_good03} alt="原生創意" />
+                    <span className="d-inline d-lg-none">原生創意</span>
                   </div>
-
-                  {/* 4. 人氣王 */}
                   <div className="tab-group">
                     <div className="icon-tab">人氣王</div>
-                    <img src="./src/assets/icon_good04.svg" alt="人氣王" />
-                    <span className="fs-7 me-3 d-inline d-lg-none">人氣王</span>
+                    <img src={icon_good04} alt="人氣王" />
+                    <span className="d-inline d-lg-none">人氣王</span>
                   </div>
                 </div>
                 <div className="content-custom mt-3">
@@ -107,7 +106,7 @@ const Home = () => {
               <div className="right-column">
                 <div className="information-crad mt-4 mt-lg-0">
                   <div className="d-flex">
-                    <img src="./src/assets/store_img.jpg" className="store_img" alt="" />
+                    <img src={store_img} className="store_img" alt="大頭照" />
                     <div className="ms-3 mt-2 align-self-center">
                       <div className="fs-5">缺錢事務所</div>
                       <p>發起 1 個專案</p>

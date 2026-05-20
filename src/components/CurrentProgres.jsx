@@ -1,19 +1,23 @@
+import news01 from '../assets/news01.jpg'
+import news02 from '../assets/news02.jpg'
+import news03 from '../assets/news03.jpg'
+
 function CurrentProgres() {
   const progresData = [
     {
-      img: '/src/assets/news01.jpg',
+      img: news01,
       title: '高雄體驗會｜免費參加送帆布袋',
       date: '2021-06-20',
       content: '大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！',
     },
     {
-      img: '/src/assets/news02.jpg',
+      img: news02,
       title: '限時早鳥倒數中！把握最後 7 折優惠時機',
       date: '2021-06-25',
       content: '感謝大家開賣以來的關注！最划算的超早鳥優惠名額已經所剩無幾，還在猶豫的朋友趕快把握機會，別錯過最挺贊助者的限定優惠囉！',
     },
     {
-      img: '/src/assets/news03.jpg',
+      img: news03,
       title: '設計師手札｜打造這台相機的幕後初衷',
       date: '2021-06-28',
       content: '在募資進行的同時，我們想和大家聊聊這款相機的設計理念。從初期的草圖到無數次的外觀調整，我們是如何在復古與現代科技中找到完美平衡的？',

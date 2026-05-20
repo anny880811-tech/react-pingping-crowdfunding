@@ -1,7 +1,9 @@
+import plan_img from '../assets/plan_img.jpg'
+
 function SponsorPlanCard() {
   return <>
     <div className="product-card mt-4">
-      <img src="./src/assets/plan_img.jpg" className="plan-img" alt="商品卡片相機照片" />
+      <img src={plan_img} className="plan-img" alt="商品卡片相機照片" />
       <div className="mt-2 ms-3 me-3 d-flex justify-content-between">
         <div>限時優惠</div>
         <div>2 days 20:05:20</div>

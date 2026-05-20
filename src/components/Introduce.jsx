@@ -1,7 +1,10 @@
+import p1 from '../assets/p1.jpg'
+import p2 from '../assets/p2.jpg'
+
 function Introduce() {
   return <>
     <div>
-      <img src="./src/assets/p1.jpg" className="p1" alt="" />
+      <img src={p1} className="p1" alt="施了魔法的照片" />
     </div>
     <div className="mt-4">
       <h4 className="title">施了魔法的照片</h4>
@@ -10,7 +13,7 @@ function Introduce() {
       </p>
     </div>
     <div>
-      <img src="./src/assets/p2.jpg" className="p1" alt="" />
+      <img src={p2} className="p1" alt="留下當下的美好" />
     </div>
     <div className="mt-4">
       <h4 className="title">留下當下的美好</h4>

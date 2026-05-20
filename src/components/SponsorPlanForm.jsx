@@ -1,7 +1,9 @@
+import icon_heart from '../assets/icon_heart.svg'
+
 function SponsorPlanForm() {
   return <>
     <div>
-      <img src="./src/assets/icon_heart.svg" className="icon-heart" alt="愛心icon" />
+      <img src={icon_heart} className="icon-heart" alt="愛心icon" />
       <div className="section-title">
         <h4 className="section-title-text mt-3">贊助專案</h4>
       </div>

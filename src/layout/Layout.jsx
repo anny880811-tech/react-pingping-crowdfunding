@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Outlet } from "react-router"
-import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import logo from '../assets/logo.jpg'
 
 const Layout = () => {
   const modalElement = useRef(null)
@@ -34,7 +35,7 @@ const Layout = () => {
     <nav className="navbar navbar-expand-lg navbr-custom">
       <div className="container">
         <a className="navbar-brand me-3" href="#">
-          <img src="./src/assets/logo.jpg" className="logo-custom" alt="logo" />
+          <img src={logo} className="logo-custom" alt="logo" />
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
